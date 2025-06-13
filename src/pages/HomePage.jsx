@@ -3,6 +3,7 @@ import Welcome from "../components/ui/Welcome";
 import Brand from "../components/ui/Brand";
 import Objective from "../components/ui/Objective";
 import Communication from "../components/ui/Communication";
+import GetToLearn from "../components/ui/GetToLearn";
 
 const HomePage = () => {
   return (
@@ -38,8 +39,7 @@ const HomePage = () => {
       <Brand />
       <Objective />
       <Communication />
-      <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent z-30"></div>
-
+      <GetToLearn />
     </div>
   );
 };
