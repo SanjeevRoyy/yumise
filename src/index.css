@@ -1,7 +1,41 @@
 @import "tailwindcss";
 
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poste+Senone&display=swap");
+
+.font-postesenone {
+  font-family: "Poste Senone", sans-serif;
+}
+
+.font-pacifico {
+  font-family: "Pacifico", cursive;
+}
+
+.text-stroke-3 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+}
+
 :root {
-  --color-avocado: 0.84 0.18 117.33; 
-  --color-sky: 0.85 0.2 230;
+  --font-display: "pacifico", sans-serif;
   --color-pink: 0.9 0.15 20;
+  --color-sky: 0.85 0.2 230;
+
+  --font-family-sans: "Pacifico", sans-serif;
+}
+
+@keyframes marquee-smooth {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-smooth {
+  animation: marquee-smooth 15s linear infinite;
+}
+.animate-marquee-smooth:hover {
+  animation-play-state: paused;
 }
